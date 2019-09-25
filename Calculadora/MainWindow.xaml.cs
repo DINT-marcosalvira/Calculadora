@@ -110,11 +110,31 @@ namespace Calculadora
             }
             else if(division)
             {
-                if (numero2 == 0)
+                double numero1Div;
+                double numero2Div;
+                if (CajaOperando1.Text.Length == 0)
+                {
+                    numero1Div = 0;
+                }
+                else
+                {
+                    numero1Div = Convert.ToDouble(CajaOperando1.Text);
+                }
+
+                if (CajaOperando2.Text.Length == 0)
+                {
+                    numero2Div = 0;
+                }
+                else
+                {
+                    numero2Div = Convert.ToDouble(CajaOperando2.Text);
+                }
+
+                if (numero2Div == 0)
                 {
                     CajaResultado.Text = "ERROR";
                 }
-                CajaResultado.Text = (numero1 / numero2).ToString();
+                CajaResultado.Text = (numero1Div / numero2Div).ToString();
             }
             else
             {
@@ -123,6 +143,11 @@ namespace Calculadora
 
             
         }
-        
+
+        private void BotonLimpiar_Click(object sender, RoutedEventArgs e)
+        {
+            CajaOperando1.Text = "";
+            CajaOperando2.Text = "";
+        }
     }
 }
