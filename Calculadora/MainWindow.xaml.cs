@@ -28,6 +28,7 @@ namespace Calculadora
         public MainWindow()
         {
             InitializeComponent();
+            BotonSuma.IsChecked = true;
         }
 
         private void BotonSuma_Checked(object sender, RoutedEventArgs e)
@@ -36,6 +37,8 @@ namespace Calculadora
             resta = false;
             multiplicacion = false;
             division = false;
+            if (CajaOperando1.Text.Length > 0 && CajaOperando2.Text.Length > 0)
+            CajaResultado.Text = (Convert.ToInt32(CajaOperando1.Text) + Convert.ToInt32(CajaOperando2.Text)).ToString();
         }
 
         private void BotonMultiplicacion_Checked(object sender, RoutedEventArgs e)
@@ -44,6 +47,8 @@ namespace Calculadora
             resta = false;
             multiplicacion = true;
             division = false;
+            if (CajaOperando1.Text.Length > 0 && CajaOperando2.Text.Length > 0)
+                CajaResultado.Text = (Convert.ToInt32(CajaOperando1.Text) * Convert.ToInt32(CajaOperando2.Text)).ToString();
         }
 
         private void BotonResta_Checked(object sender, RoutedEventArgs e)
@@ -52,6 +57,8 @@ namespace Calculadora
             resta = true;
             multiplicacion = false;
             division = false;
+            if (CajaOperando1.Text.Length > 0 && CajaOperando2.Text.Length > 0)
+                CajaResultado.Text = (Convert.ToInt32(CajaOperando1.Text) - Convert.ToInt32(CajaOperando2.Text)).ToString();
         }
 
         private void BotonDivision_Checked(object sender, RoutedEventArgs e)
@@ -60,6 +67,8 @@ namespace Calculadora
             resta = false;
             multiplicacion = false;
             division = true;
+            if (CajaOperando1.Text.Length > 0 && CajaOperando2.Text.Length > 0)
+                CajaResultado.Text = (Convert.ToInt32(CajaOperando1.Text) / Convert.ToInt32(CajaOperando2.Text)).ToString();
         }
 
         private void CajaOperando2_TextChanged(object sender, TextChangedEventArgs e)

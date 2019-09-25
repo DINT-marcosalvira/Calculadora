@@ -20,11 +20,11 @@
         <RadioButton x:Name="BotonMultiplicacion" Content="Multiplicación" Grid.Column="2" HorizontalAlignment="Left" Margin="53,180,0,0" GroupName="Oper" VerticalAlignment="Top" Height="20" Width="100" Checked="BotonMultiplicacion_Checked"/>
         <RadioButton x:Name="BotonResta" Content="Resta" Grid.Column="2" HorizontalAlignment="Left" Margin="53,140,0,0" VerticalAlignment="Top" GroupName="Oper" Checked="BotonResta_Checked"/>
         <RadioButton x:Name="BotonDivision" Content="División" Grid.Column="2" HorizontalAlignment="Left" Margin="53,200,0,0" VerticalAlignment="Top" GroupName="Oper" Checked="BotonDivision_Checked"/>
-        <TextBox x:Name="CajaOperando1" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="225,141,0,0" TextWrapping="Wrap" Text="                                        0" VerticalAlignment="Top" Width="147" TextChanged="CajaOperando2_TextChanged"/>
+        <TextBox x:Name="CajaOperando1" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="225,141,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" TextChanged="CajaOperando2_TextChanged"/>
         <TextBlock Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="225,116,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" FontWeight="Bold"><Run Text="Operando"/><Run Text=" "/><Run Text="1"/></TextBlock>
-        <TextBox x:Name="CajaOperando2" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="225,212,0,0" TextWrapping="Wrap" Text="                                        0" VerticalAlignment="Top" Width="147" TextChanged="CajaOperando2_TextChanged"/>
+        <TextBox x:Name="CajaOperando2" Grid.Column="2" HorizontalAlignment="Left" Height="23" Margin="225,212,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="147" TextChanged="CajaOperando2_TextChanged"/>
         <TextBlock Grid.Column="2" HorizontalAlignment="Left" Height="20" Margin="225,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="72" FontWeight="Bold"><Run Text="Operando"/><Run Text=" 2"/></TextBlock>
-        <TextBox x:Name ="CajaResultado" Grid.Column="4" HorizontalAlignment="Left" Height="23" Margin="62,177,0,0" TextWrapping="Wrap" Text="                                0" VerticalAlignment="Top" Width="120"  IsReadOnly="True"/>
+        <TextBox x:Name ="CajaResultado" Grid.Column="4" HorizontalAlignment="Left" Height="23" Margin="62,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"  IsReadOnly="True"/>
         <TextBlock Grid.Column="4" HorizontalAlignment="Left" Margin="62,151,0,0" TextWrapping="Wrap" Text="Resultado" VerticalAlignment="Top" Width="72" FontWeight="Bold"/>
 
     </Grid>
